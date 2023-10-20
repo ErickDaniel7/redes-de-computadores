@@ -1,4 +1,4 @@
-192.168.10.50
+192.168.10.50/24 - Mascada de rede vêm sempre depois da barra, exemplo: /24
 
 192
 
@@ -29,9 +29,9 @@
 4 * 2 = 2 = 0
 2 * 2 = 1 = 0
 1 * 2 = 1 = 1
-          = 0 - após a divisão de 1*2 e ainda fique incompleto até 8, zeros são adicionados para completar 8
-	        = 0
-	        = 0
+          = 0
+	  = 0
+	  = 0
 
 50
 
@@ -41,9 +41,24 @@
 6 * 2 = 3 = 0
 3 * 2 = 1 = 1
 1 * 2 = 1 = 1
-	        = 0
-	        = 0
+	  = 0
+	  = 0
 
-Binario é sempre com 8 numeros, caso a conversão termine com o 1*2 e falta numeros, são adicionados os zeros
 
-11000000.10101000.00010011.00110010
+24
+
+24 * 2 = 12 = 0
+12 * 2 = 6 = 0
+6 * 2 = 3 = 0
+3 * 2 = 1 = 1
+1 * 2 = 1 = 1
+	  = 0
+	  = 0
+	  = 0
+					    192      168      10       50
+					     |        |        |        |
+IP 192.168.10.50 convertido em binário = 11000000.10101000.00010011.00110010
+
+					       24
+						|
+Mascara de rede /24 convertida em binário = 00011000
